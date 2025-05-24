@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #121212;
+    color: #eaeaea;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background: #1f1f1f;
+    color: #eaeaea;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: #eaeaea;
+    text-decoration: none;
+    padding: 8px 14px;
+    transition: background 0.3s, transform 0.2s;
+    border-radius: 6px;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    background: #2e8b57;
+    transform: scale(1.05);
+  }
+  
+  /* Sections */
+  section {
+    padding: 60px 40px;
+  }
+  
+  .hero {
+    background: #121212;
+    color: white;
+    text-align: center;
+    padding: 100px 40px;
+  }
+  
+  .hero-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .hero-text h2 {
+    font-size: 3rem;
+    color: #2e8b57;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    padding: 0 20px;
+  }
+  
+  /* Call to Action Button */
+  .cta-btn {
+    background: #2e8b57;
+    padding: 12px 30px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s, background-color 0.3s ease, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(46, 139, 87, 0.4);
+  }
+  
+  .cta-btn:hover {
+    background: #3cb371;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(46, 139, 87, 0.6);
+  }
+  
+  /* Sections Content */
+  .about, .skills, .projects, .certifications, .contact {
+    background: #1f1f1f;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+  }
+  
+  .about:hover, .skills:hover, .projects:hover, .certifications:hover, .contact:hover {
+    transform: scale(1.01);
+  }
+  
+  h2, h3 {
+    color: #2e8b57;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    padding: 5px 0;
+  }
+  
+  /* Project & Skills Styling */
+  .project-card, .skills-list {
+    margin-top: 20px;
+  }
+  
+  .project-card {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+  }
+  
+  .skills-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .skill {
+    background: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 30%;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .skill i {
+    font-size: 3rem;
+    color: #2e8b57;
+    margin-bottom: 10px;
+  }
+  
+  .skill:hover {
+    transform: scale(1.05);
+    background: #3a3a3a;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Contact */
+  .contact a {
+    color: #87ffa8;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .contact a:hover {
+    color: #3cb371;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #181818;
+    color: #eaeaea;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  footer p {
+    color: #2e8b57;
+  }
+  
+  /* Project Link */
+  .project-card a {
+    text-decoration: none;
+    color: #87ffa8;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .project-card a:hover {
+    color: #3cb371;
+  }
+.hero {
+  background-image: url('profile.jpg');
+  background-color: #486553;
+  background-size: cover;
+  box-shadow: inset rgb(62, 90, 21);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay */
+  z-index: 1;
+}
+
+.hero-text {
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #065b29;
+  color: rgb(223, 230, 226);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #064c10;
+}
+  
